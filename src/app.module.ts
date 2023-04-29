@@ -6,6 +6,7 @@ import { FileEntity } from './resources/files/entities/file.entity';
 import { UserEntity } from './resources/users/entities/user.entity';
 import { UsersModule } from './resources/users/users.module';
 import { FilesModule } from './resources/files/files.module';
+import { IamModule } from './iam/iam.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { FilesModule } from './resources/files/files.module';
     }),
     UsersModule,
     FilesModule,
+    IamModule,
   ],
   controllers: [],
   providers: [],
